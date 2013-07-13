@@ -1,0 +1,32 @@
+{
+  "name": "pause-queue",
+  "description": "A pausable and resumable queue",
+  "keywords" : [
+    "queue",
+    "pause",
+    "pauseble",
+    "resume",
+    "resumable"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/maxkueng/pause-queue.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxkueng/pause-queue.git"
+  },
+  "bugs" : "https://github.com/maxkueng/pause-queue/issues",
+  "author": "Max Kueng <me@maxkueng.com> (http://maxkueng.com/)",
+  "contributors": [
+    "Max Kueng <me@maxkueng.com> (http://maxkueng.com/)"
+  ],
+  "main": "index",
+  "engines" : {
+    "node" : ">=0.6.0"
+  }
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/maxkueng/pause-queue/raw/master/LICENSE"
+    }
+  ]
+}
