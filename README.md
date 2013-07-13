@@ -13,7 +13,7 @@ Or what ever you can imagine.
 npm install pause-queue --save
 ```
 
-Or manuelly add it to your package.json
+Or manually add it to your package.json
 
 ## Example
 
