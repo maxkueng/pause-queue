@@ -50,13 +50,11 @@ function PauseQueue (worker, concurrency) {
 			},
 
 			pause : function () {
-				console.log('pause');
 				queue.paused = true;
 				queue.run();
 			},
 
 			resume : function () {
-				console.log('resume');
 				queue.paused = false;
 				queue.run();
 			}, 
