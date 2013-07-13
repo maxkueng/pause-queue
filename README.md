@@ -7,8 +7,15 @@ This can become useful if you want to stop processing when a resource
 becomes unavailable and continue execution when it's available again.
 Or what ever you can imagine.
 
+## Installation
 
-## Example Usage
+```bash
+npm install pause-queue --save
+```
+
+Or manuelly add it to your package.json
+
+## Example
 
 ```javascript
 var pausequeue = require('pause-queue'),
