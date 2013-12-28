@@ -41,7 +41,7 @@ var animalQueue = pausequeue(function (animal, done) {
 
 // Pause the queue after 4 seconds
 setTimeout(function () {
-  animalQueue.pause();
+  animalQueue.pause(function() { /* This is optional and will be called once all pending tasks are complete */ });
 }, 4000);
 
 // Resume the queue after 10 seconds
