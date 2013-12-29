@@ -8,7 +8,7 @@
     "resume",
     "resumable"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/maxkueng/pause-queue.git",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   "bugs" : "https://github.com/maxkueng/pause-queue/issues",
   "author": "Max Kueng <me@maxkueng.com> (http://maxkueng.com/)",
   "contributors": [
-    "Max Kueng <me@maxkueng.com> (http://maxkueng.com/)"
+    "Max Kueng <me@maxkueng.com> (http://maxkueng.com/)",
+    "Ivo Georgiev (http://ivogeorgiev.eu/)"
   ],
   "main": "index",
   "engines" : {

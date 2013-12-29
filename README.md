@@ -80,6 +80,11 @@ Output:
     Bison 18s
     Buffalo 19s
 
+## Contributors
+
+ - Max Kueng (http://maxkueng.com/)
+ - Ivo Georgiev (http://ivogeorgiev.eu/)
+
 ## License
 
 MIT License
