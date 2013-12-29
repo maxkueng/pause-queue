@@ -27,6 +27,8 @@ function PauseQueue (worker, concurrency) {
 			},
 
 			run : function () {
+                if (pending == 0 && queue.pausedCb) { queue.pausedCb(); delete queue.pausedCb; };
+                
 				if (!queue.paused && pending < queue.concurrency && queue.tasks.length) {
 					var task = queue.tasks.shift();
 					pending += 1;
@@ -49,8 +51,9 @@ function PauseQueue (worker, concurrency) {
 
 			},
 
-			pause : function () {
+			pause : function (cb) {
 				queue.paused = true;
+                queue.pausedCb = cb;
 				queue.run();
 			},
 
