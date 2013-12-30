@@ -12,19 +12,22 @@ function PauseQueue (worker, concurrency) {
 			nothing : null,
 			paused : false,
 
-			push : function (task, priority, callback) {
-				if (typeof priority === 'function') {
-					callback = priority;
-					priority = false;
-				}
-
-				queue.tasks.push({
+			add : function (task, priority, callback) {
+				queue.tasks[priority ? "unshift" : "push"]({
 					data : task,
 					callback : (typeof callback === 'function') ? callback : null
 				});
 
 				process.nextTick(queue.run);
 			},
+            
+            push : function(task, callback) {
+                queue.add(task, false, callback);
+            },
+            
+            unshift : function(task, callback) {
+                queue.add(task, true, callback);
+            },
 
 			run : function () {
 				if (pending == 0 && queue.pausedCb) { queue.pausedCb(); delete queue.pausedCb; };
