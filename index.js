@@ -21,13 +21,13 @@ function PauseQueue (worker, concurrency) {
 				process.nextTick(queue.run);
 			},
             
-            push : function(task, callback) {
-                queue.add(task, false, callback);
-            },
-            
-            unshift : function(task, callback) {
-                queue.add(task, true, callback);
-            },
+			push : function(task, callback) {
+				queue.add(task, false, callback);
+			},
+
+			unshift : function(task, callback) {
+				queue.add(task, true, callback);
+			},
 
 			run : function () {
 				if (pending == 0 && queue.pausedCb) { queue.pausedCb(); delete queue.pausedCb; };
